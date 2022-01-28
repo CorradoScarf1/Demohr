@@ -37,6 +37,6 @@ var req = {
     "POSITION": $.context.POSITION,
     "CREATION_DATE": datacreazione,
     "APPROVATORE": $.context.APPROVATORE,
-    "APPROVALSTATUS": $.context.approvalstatus
+    "APPROVALSTATUS": $.context.approvalStatus
 }
 $.context.req = req;
