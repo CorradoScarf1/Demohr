@@ -36,7 +36,7 @@ var req = {
     "RAL": $.context.RAL,
     "POSITION": $.context.POSITION,
     "CREATION_DATE": datacreazione,
-    "APPROVATORE": $.context.APPROVATORE,
+    "APPROVATORE": $.context.USER_ID,
     "APPROVALSTATUS": $.context.approvalStatus
 }
 $.context.req = req;
