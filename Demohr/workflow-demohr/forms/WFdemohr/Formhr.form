@@ -1,0 +1,109 @@
+{
+    "id": "formhr",
+    "schemaVersion": "1.1.0",
+    "name": "Formhr",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "sessionehr",
+            "type": "section",
+            "title": "sessionehr",
+            "content": [
+                {
+                    "id": "id_richiesta",
+                    "type": "string",
+                    "label": "Id Richiesta",
+                    "readOnly": false,
+                    "value": "${context.ID_RICHIESTA}",
+                    "constraints": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "description",
+                    "type": "string",
+                    "label": "Descrizione",
+                    "readOnly": false,
+                    "value": "${context.DESCRIPTION}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "userid",
+                    "type": "string",
+                    "label": "User Id",
+                    "readOnly": false,
+                    "value": "${context.USER_ID}",
+                    "constraints": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "commento_",
+                    "type": "string",
+                    "label": "Commento ",
+                    "readOnly": false,
+                    "value": "${context.COMMENT}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "titolo",
+                    "type": "string",
+                    "label": "Titolo",
+                    "readOnly": false,
+                    "value": "${context.TITOLO}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "ral",
+                    "type": "string",
+                    "label": "RAL",
+                    "readOnly": false,
+                    "value": "${context.RAL}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "position",
+                    "type": "string",
+                    "label": "Posizione",
+                    "readOnly": false,
+                    "value": "${context.POSITION}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "approvatorehr",
+                    "type": "string",
+                    "label": "Approvatore",
+                    "readOnly": true,
+                    "value": "${context.APPROVATORE}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approva",
+            "text": "Approva",
+            "decisionType": "positive"
+        },
+        {
+            "id": "rifiuta",
+            "text": "Rifiuta",
+            "decisionType": "negative"
+        }
+    ]
+}
