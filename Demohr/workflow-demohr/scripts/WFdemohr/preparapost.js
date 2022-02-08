@@ -25,6 +25,7 @@ var product = {
 $.context.product = product;
 */
 var lastUserTask1 = $.usertasks.usertask1.last;
+var userTaskProcessor = lastUserTask1.processor;
 var userTaskCompletedAt = lastUserTask1.completedAt;
 var datacreazione = userTaskCompletedAt.toString().slice(0,10);
 var req = {
@@ -36,7 +37,7 @@ var req = {
     "RAL": $.context.RAL,
     "POSITION": $.context.POSITION,
     "CREATION_DATE": datacreazione,
-    "APPROVATORE": $.context.USER_ID,
+    "APPROVATORE": userTaskProcessor,
     "APPROVALSTATUS": $.context.approvalStatus
 }
 $.context.req = req;

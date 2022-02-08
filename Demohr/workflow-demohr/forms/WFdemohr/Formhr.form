@@ -80,16 +80,6 @@
                     "constraints": {
                         "required": false
                     }
-                },
-                {
-                    "id": "approvatorehr",
-                    "type": "string",
-                    "label": "Approvatore",
-                    "readOnly": true,
-                    "value": "${context.APPROVATORE}",
-                    "constraints": {
-                        "required": false
-                    }
                 }
             ]
         }
