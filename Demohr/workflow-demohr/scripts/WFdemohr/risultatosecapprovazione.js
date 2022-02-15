@@ -1,4 +1,4 @@
-var task = $.usertasks.usertask1.last;
+var task = $.usertasks.usertask2.last;
 var decision = {
 //	"User": task.processor,
 //	"Role": $.context.UserId,
@@ -8,11 +8,9 @@ var decision = {
 //$.context.comment = "";
 if (task.decision == "approva") {
     $.context.approvalStatus = "approvato";
-    $.context.secondoapprovatore = true;
 } else {
 	$.context.approvalStatus = "rifiuta";
 	$.context.workflowTerminated = true;
-    $.context.secondoapprovatore = false;
 }
 //$.context.internal.approvalStatus = "rifiuta";
 //$.context.History.push(decision);

@@ -24,7 +24,14 @@ var product = {
 // write 'product' node to workflow context
 $.context.product = product;
 */
-var lastUserTask1 = $.usertasks.usertask1.last;
+/*var lastUserTask1 = $.usertasks.usertask1.last;
+var lastusertask2 = $.usertasks.usertask2.last;
+if (lastusertask2 != null){
+    var userTaskProcessor = lastusertask2.processor;
+}  else{
+    var userTaskProcessor = lastusertask1.processor;
+    }*/
+    var lastUserTask1 = $.usertasks.usertask1.last;
 var userTaskProcessor = lastUserTask1.processor;
 var userTaskCompletedAt = lastUserTask1.completedAt;
 var datacreazione = userTaskCompletedAt.toString().slice(0,10);
